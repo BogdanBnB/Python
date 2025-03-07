@@ -31,7 +31,7 @@ def verify_player_ace(value):
             if value[i]==11:
                 value[i]=1
 
-def get_computer_cards(computer, player):
+def get_computer_cards(computer):
     computer_score=calculate_computer_cards(computer)
     while computer_score < 16:
         blackjack_hand["computer"].append(random.choice(cards))
@@ -64,7 +64,7 @@ def blackjack(start_game):
             get_player_card = input("Type 'y' to get another card, type 'n' to pass: ")
         if get_player_card == "n":
             print(f"Your final hand: {blackjack_hand["player"]}, final score: {calculate_player_cards(blackjack_hand["player"])}")
-            get_computer_cards(blackjack_hand["computer"], blackjack_hand["player"])
+            get_computer_cards(blackjack_hand["computer"])
             print(f"Computer's final hand: {blackjack_hand["computer"]}, final score: {calculate_computer_cards(blackjack_hand["computer"])}")
             if calculate_computer_cards(blackjack_hand["computer"]) > 21:
                 print(f"Opponent went over. You win :)")

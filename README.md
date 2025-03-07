@@ -1,4 +1,4 @@
-# Python🚀 Python Challenges & Games 🎮🐍
+🚀 Python Challenges & Games 🎮🐍
 
 Welcome to Python Challenges & Games, a dynamic repository filled with fun and engaging Python problems and interactive games! Whether you're a beginner looking to improve your coding skills or an experienced developer searching for a challenge, this repo has something for you.
 

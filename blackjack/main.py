@@ -82,6 +82,8 @@ def blackjack(start_game):
             if restart_game == 'y':
                 print("\n" * 20)
                 blackjack(restart_game)
+            else:
+                return 0
     else:
         return 0
 
